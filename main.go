@@ -31,7 +31,7 @@ func main() {
 
 	for i := 0; i < *number; i++ {
 		var writer io.Writer = os.Stdout
-		if i%2 == 1 {
+		if *alternateStdError && i%2 == 1 {
 			writer = os.Stderr
 		}
 
