@@ -12,7 +12,7 @@ import (
 var (
 	interval          = flag.String("interval", "1s", "The interval duration in standard golang time.Duration format")
 	number            = flag.Int("number", 5, "The number of times to iterate (must be at least 1)")
-	alternateStdError = flag.Bool("alternate-stderror", true, "Alternate between stdout and stderr")
+	alternateStdError = flag.Bool("alternate-stderror", false, "Alternate between stdout and stderr")
 	exitCode          = flag.Int("exitcode", 0, "The exit code to exit with")
 )
 
